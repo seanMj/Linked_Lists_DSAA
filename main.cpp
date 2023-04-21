@@ -14,13 +14,13 @@ using std::cout;	using std::endl;
 //..
 int main()
 {
-    int_LNode<double>* ptr_node = new int_LNode<double>(80);
+    SLL_Node<double>* ptr_node = new SLL_Node<double>(80);
     std::cout << ptr_node->info << std::endl;
 
-    ptr_node->next = new int_LNode<double>(30.55);
+    ptr_node->next = new SLL_Node<double>(30.55);
     std::cout << ptr_node->next->info << std::endl;
 
-    ptr_node->next->next = new int_LNode<double>(555);
+    ptr_node->next->next = new SLL_Node<double>(555);
     std::cout << (ptr_node->next->next->info) * 5 << '\n';
 }
 
