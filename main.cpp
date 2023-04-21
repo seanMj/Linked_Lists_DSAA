@@ -15,12 +15,12 @@ using std::cout;	using std::endl;
 int main()
 {
     SLL_Node<double>* ptr_node = new SLL_Node<double>(80);
-    std::cout << ptr_node->info << std::endl;
+    std::cout << ptr_node->user_data << std::endl;
 
-    ptr_node->next = new SLL_Node<double>(30.55);
-    std::cout << ptr_node->next->info << std::endl;
+    ptr_node->next_node = new SLL_Node<double>(30.55);
+    std::cout << ptr_node->next_node->user_data << std::endl;
 
-    ptr_node->next->next = new SLL_Node<double>(555);
-    std::cout << (ptr_node->next->next->info) * 5 << '\n';
+    ptr_node->next_node->next_node = new SLL_Node<double>(555);
+    std::cout << (ptr_node->next_node->next_node->user_data) * 5 << '\n';
 }
 

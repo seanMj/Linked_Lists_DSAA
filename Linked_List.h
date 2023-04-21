@@ -13,13 +13,14 @@ template<typename T> class SLL_Node
 {
     public:
         SLL_Node(){
-            next = nullptr;  //create the first node in the link, assign NULL to the node
+            next_node = nullptr;  //create the first node in the link, assign NULL to the node
         }
-        SLL_Node(T i, SLL_Node* inull = nullptr){
-            info = i;       //set info to a value given by the constructor by user or data
-            next = inull;   //set value of the next node to NULL when creating the next node using this constructor
+        SLL_Node(T user_data_input, SLL_Node* node_nuller = nullptr)
+        {
+            user_data = user_data_input;       //set info to a value given by the constructor by user or data
+            next_node = node_nuller;   //set value of the next node to NULL when creating the next node using this constructor
         }
-        T info;             //info holds the values given to the node by a user or data
-        SLL_Node* next;    //next holds the value of NULL or the next node in the link
+        T user_data;             //info holds the values given to the node by a user or data
+        SLL_Node* next_node;    //next holds the value of NULL or the next node in the link
 };
 #endif// LINKED_LIST
